@@ -1,4 +1,8 @@
 #!/bin/bash
+
+## Mac OSX Sierraの高速化とおすすめ設定。 | WebEssentials
+## https://www.webessentials.biz/osx-customize/sox-sierra-fast/
+
 defaults write -g NSWindowResizeTime -float 0.005
 defaults write com.apple.dock expose-animation-duration -float 0.05
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
@@ -10,5 +14,10 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.mail DisableReplyAnimations -bool true
 defaults write com.apple.mail DisableSendAnimations -bool true
 defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.1
+
+## Mac Finderのタイトルバーにフォルダのフルパスを表示する裏技 / Inforati
+## http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-display-the-full-path-of-folder-in-macos-finder-titlebar.html
+defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
+
 killall Dock
 Killall Finder
