@@ -19,5 +19,9 @@ defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.1
 ## http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-display-the-full-path-of-folder-in-macos-finder-titlebar.html
 defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
 
+##【Mac】隠しファイル・隠しフォルダを表示する方法 - Qiita
+## https://qiita.com/TsukasaHasegawa/items/fa8e783a556dc1a08f51
+defaults write com.apple.finder AppleShowAllFiles true
+
 killall Dock
 Killall Finder
