@@ -23,5 +23,10 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
 ## https://qiita.com/TsukasaHasegawa/items/fa8e783a556dc1a08f51
 defaults write com.apple.finder AppleShowAllFiles true
 
+## .DS_Storeの仕組みと削除＆作成しないよう設定する方法 | UX MILK
+## http://uxmilk.jp/48160
+find ~/ -name ".DS_Store" -delete
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+
 killall Dock
 Killall Finder
