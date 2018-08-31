@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ## src: MAC OSX10.11 EL CAPITANが遅い！を高速化、軽量化する簡単な方法。 | WebEssentials
 ## http://www.webessentials.biz/osx-customize/firstelcapitan/

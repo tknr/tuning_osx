@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ## Mac OSX Sierraの高速化とおすすめ設定。 | WebEssentials
 ## https://www.webessentials.biz/osx-customize/sox-sierra-fast/
